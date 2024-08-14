@@ -1,3 +1,4 @@
 .git-ignore
-
 __pycache__/calc_functions.cpython-312.pyc
+
+__pycache__/divide.cpython-312.pyc
