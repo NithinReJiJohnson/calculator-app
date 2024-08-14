@@ -1,0 +1,3 @@
+.git-ignore
+
+__pycache__/calc_functions.cpython-312.pyc
