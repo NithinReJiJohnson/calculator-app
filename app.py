@@ -1,7 +1,6 @@
 from calc_functions import do_addition, do_subtraction
 from calc_functions import do_division     
-
-
+from area import calculate_area_rectangle
 
 def main():
     print('Welcome to the calculator app')
@@ -9,6 +8,7 @@ def main():
           0.Add
           1.Subtract
           3. Division
+          3.Area
           """)
     user_input=input("select the option:")
     a=int(input('Value of A:'))
@@ -21,6 +21,10 @@ def main():
     
     elif user_input=="3":
         result=do_division(a,b)
+        print(result)
+        
+    elif user_input =="3":
+        result=calculate_area_rectangle(a,b)
         print(result)
         
         
