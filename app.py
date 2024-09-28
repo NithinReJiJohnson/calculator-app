@@ -1,12 +1,12 @@
 from calc_functions import do_addition, do_subtraction
-
-
+from area import calculate_area_rectangle
 
 def main():
     print('Welcome to the calculator app')
     print("""select the function from the given options:
           0.Add
           1.Subtract
+          3.Area
           """)
     user_input=input("select the option:")
     a=int(input('Value of A:'))
@@ -16,6 +16,10 @@ def main():
     if user_input=="0":
         result=do_addition(a,b)
         print(result)
+    elif user_input =="3":
+        result=calculate_area_rectangle(a,b)
+        print(result)
+        
         
     else:
         result1=do_subtraction(a,b)
