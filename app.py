@@ -1,4 +1,5 @@
-from calc_functions import do_addition, do_subtraction, do_division
+from calc_functions import do_addition, do_subtraction
+from calc_functions import do_division     
 
 
 
@@ -7,7 +8,7 @@ def main():
     print("""select the function from the given options:
           0.Add
           1.Subtract
-          4.Division
+          3. Division
           """)
     user_input=input("select the option:")
     a=int(input('Value of A:'))
@@ -18,15 +19,14 @@ def main():
         result=do_addition(a,b)
         print(result)
     
-    elif user_input=="4":
+    elif user_input=="3":
         result=do_division(a,b)
         print(result)
-
+        
+        
     else:
         result1=do_subtraction(a,b)
         print(result1)
-
-
 
     
 
